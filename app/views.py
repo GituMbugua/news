@@ -1,6 +1,6 @@
 from flask import render_template
 from app import app
-from .requests import get_source
+from .requests import get_sources
 
 @app.route('/')
 def index():
@@ -9,14 +9,14 @@ def index():
     '''
 
     # getting source categories
-    general_news = get_source('general')
-    business_news = get_source('business')
-    entertainment_news = get_source('entertainment')
-    gaming_news = get_source('gaming')
-    music_news = get_source('music')
-    politics_news = get_source('politics')
-    sports_news = get_source('sport')
-    technology_news = get_source('technology')
+    general_news = get_sources('general')
+    business_news = get_sources('business')
+    entertainment_news = get_sources('entertainment')
+    gaming_news = get_sources('gaming')
+    music_news = get_sources('music')
+    politics_news = get_sources('politics')
+    sports_news = get_sources('sport')
+    technology_news = get_sources('technology')
     
 
     title = 'News from your Favorite Sources'
