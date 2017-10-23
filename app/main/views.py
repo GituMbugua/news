@@ -31,6 +31,6 @@ def source(id):
     '''
     article = get_articles(id)
     
-    title = f'{article.title}'
+    title = f'{id}'
 
     return render_template('source.html', title = title, article = article)
